@@ -1,0 +1,21 @@
+# libFuzzer dictionary for gluon's RFC5322 address parser (rfc5322.FuzzParseAddress /
+# ParseAddress + ParseAddressList). Tokens mirror RFC5322 address/mailbox grammar so the
+# fuzzer can quickly assemble well-formed and edge-case address strings.
+"@"
+","
+"<"
+">"
+"("
+")"
+"\""
+"."
+":"
+";"
+"\\"
+" "
+"\x09"
+"iana.org"
+"a@b"
+"Group"
+"undisclosed-recipients"
+"!#$%&'*+-/=?^_`{|}~"

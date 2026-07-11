@@ -1,0 +1,8 @@
+project: gluon
+target: fuzz_new_parsed_message
+cmds:
+  - cmd: /mayhem/fuzz_new_parsed_message
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_new_parsed_message/testsuite

@@ -1,0 +1,9 @@
+project: gluon
+target: fuzz_rfc5322
+cmds:
+  - cmd: /mayhem/fuzz_rfc5322
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_rfc5322.dict
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_rfc5322/testsuite

@@ -1,0 +1,9 @@
+project: gluon
+target: fuzz_parse_address
+cmds:
+  - cmd: /mayhem/fuzz_parse_address
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_parse_address.dict
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_parse_address/testsuite

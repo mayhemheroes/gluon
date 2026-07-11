@@ -1,0 +1,22 @@
+# libFuzzer dictionary for gluon's RFC822 decode/body parser (rfc822.FuzzParseDec ->
+# Parse(...).DecodedBody()). Tokens are the MIME headers + boundary syntax the parser
+# switches on (Content-Type / Content-Transfer-Encoding / multipart boundaries).
+"Content-Type:"
+"Content-Transfer-Encoding:"
+"multipart/alternative"
+"multipart/mixed"
+"multipart/related"
+"text/plain"
+"text/html"
+"base64"
+"quoted-printable"
+"7bit"
+"8bit"
+"boundary="
+"charset=utf-8"
+"--"
+"\x0d\x0a"
+"\x0d\x0a\x0d\x0a"
+"; "
+"=\""
+"\""
